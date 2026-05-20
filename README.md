@@ -152,7 +152,7 @@ streamlit run app.py
 
  🏗 Project Architecture Diagram
 
-
+```text
                     ┌─────────────────────┐
                     │      User UI        │
                     │   (Streamlit App)   │
@@ -189,6 +189,7 @@ streamlit run app.py
 │ Email Automation   │
 │ SMTP / Gmail API   │
 └────────────────────┘
+```
 
 ---
 
