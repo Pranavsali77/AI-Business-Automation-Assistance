@@ -150,6 +150,47 @@ streamlit run app.py
 
 ---
 
+ 🏗 Project Architecture Diagram
+
+```text
+                    ┌─────────────────────┐
+                    │      User UI        │
+                    │   (Streamlit App)   │
+                    └─────────┬───────────┘
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+          ▼                   ▼                   ▼
+
+ ┌────────────────┐  ┌────────────────┐  ┌────────────────┐
+ │  AI Chatbot    │  │ Lead Capture   │  │ Admin Dashboard│
+ │  Module        │  │ Module         │  │ Module         │
+ └────────┬───────┘  └────────┬───────┘  └────────┬───────┘
+          │                   │                   │
+          ▼                   ▼                   ▼
+
+ ┌────────────────────────────────────────────────────────┐
+ │                Backend Logic (Python)                 │
+ │ chatbot.py     automation.py     database.py          │
+ └───────────────────────┬────────────────────────────────┘
+                         │
+         ┌───────────────┼────────────────┐
+         │                                │
+         ▼                                ▼
+
+┌───────────────────┐          ┌─────────────────────┐
+│ OpenRouter API    │          │ SQLite Database     │
+│ (LLM Integration) │          │ Lead Management     │
+└───────────────────┘          └─────────────────────┘
+         │
+         ▼
+
+┌────────────────────┐
+│ Email Automation   │
+│ SMTP / Gmail API   │
+└────────────────────┘
+
+
  🌐 Deployment
  🚀 Live Demo
 
