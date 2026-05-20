@@ -190,6 +190,7 @@ streamlit run app.py
 │ SMTP / Gmail API   │
 └────────────────────┘
 
+---
 
  🌐 Deployment
  🚀 Live Demo
