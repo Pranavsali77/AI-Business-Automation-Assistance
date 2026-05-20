@@ -170,8 +170,8 @@ streamlit run app.py
           ▼                   ▼                   ▼
 
  ┌────────────────────────────────────────────────────────┐
- │                Backend Logic (Python)                 │
- │ chatbot.py     automation.py     database.py          │
+ │                Backend Logic (Python)                  │
+ │ chatbot.py     automation.py     database.py           │
  └───────────────────────┬────────────────────────────────┘
                          │
          ┌───────────────┼────────────────┐
