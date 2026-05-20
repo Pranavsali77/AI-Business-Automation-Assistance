@@ -152,7 +152,7 @@ streamlit run app.py
 
  🏗 Project Architecture Diagram
 
-```text
+
                     ┌─────────────────────┐
                     │      User UI        │
                     │   (Streamlit App)   │
