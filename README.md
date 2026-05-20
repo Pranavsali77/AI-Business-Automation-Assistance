@@ -151,12 +151,15 @@ streamlit run app.py
 ---
 
  🌐 Deployment
+ 🚀 Live Demo
 
-The application can be deployed using:
-- Streamlit Cloud
-- Render
-- Railway
-- Heroku
+Try the deployed AI-Powered Business Automation Assistant here:
+
+👉 https://ai-business-automation-assistance.streamlit.app/
+
+ 🔗 GitHub Repository
+
+👉 https://github.com/Pranavsali77/AI-Business-Automation-Assistance
 
 ---
 
