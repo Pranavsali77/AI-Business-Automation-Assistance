@@ -1,11 +1,6 @@
 import os
 import requests
 
-from dotenv import load_dotenv
-
-# Load .env
-load_dotenv()
-
 # =========================================
 # AI RESPONSE FUNCTION
 # =========================================
@@ -33,14 +28,28 @@ def get_ai_response(user_input):
 
                 {
                     "role": "system",
-                    "content": "You are an AI Business Assistant."
+                    "content": """
+                    You are an AI-Powered Business Automation Assistant.
+
+                    Help users with:
+                    - AI automation
+                    - business workflows
+                    - chatbot systems
+                    - customer support
+                    - lead management
+
+                    Keep responses professional and easy to understand.
+                    """
                 },
 
                 {
                     "role": "user",
                     "content": user_input
                 }
-            ]
+            ],
+
+            "temperature": 0.7,
+            "max_tokens": 1000
         }
 
         response = requests.post(
@@ -50,8 +59,6 @@ def get_ai_response(user_input):
         )
 
         result = response.json()
-
-        print(result)
 
         if "choices" in result:
 
